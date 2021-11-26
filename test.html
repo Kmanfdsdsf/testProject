@@ -56,6 +56,14 @@ function share2(){
 });
 }
     
+function share3(){
+    
+    Kakao.init("0f79b8aa7666f5831109a6c2e60a548f");
+  
+    Kakao.Link.sendCustom({
+        templateId:65923
+  });
+  }
 </script>
 </head>
 <body>
@@ -68,6 +76,7 @@ function share2(){
 
 <button onclick="share()">공유하기</button><br><br><br>
 <button onclick="share2()">공유하기2</button><br><br><br>
+<button onclick="share3()">공유하기3</button><br><br><br>
 
 
 
