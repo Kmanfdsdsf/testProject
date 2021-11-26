@@ -1,4 +1,69 @@
-test.html    test.html    test.html    <br><br><br>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+<script>
 
-카카오테스트 페이지 <br><br><br>
+function share(){
+    Kakao.init("0f79b8aa7666f5831109a6c2e60a548f");
+    Kakao.Link.sendDefault({
+      objectType: 'feed',
+      content: {
+        title: '딸기 치즈 케익',
+        description: '#케익 #딸기 #삼평동 #카페 #분위기 #소개팅',
+        imageUrl:
+          'http://k.kakaocdn.net/dn/Q2iNx/btqgeRgV54P/VLdBs9cvyn8BJXB3o7N8UK/kakaolink40_original.png',
+        link: {
+          mobileWebUrl: 'https://developers.kakao.com',
+          webUrl: 'https://developers.kakao.com',
+        },
+      },
+      social: {
+        likeCount: 286,
+        commentCount: 45,
+        sharedCount: 845,
+      },
+      buttons: [
+        {
+          title: '웹으로 보기',
+          link: {
+            mobileWebUrl: 'https://developers.kakao.com',
+            webUrl: 'https://developers.kakao.com',
+          },
+        },
+        {
+          title: '앱으로 보기',
+          link: {
+            mobileWebUrl: 'https://developers.kakao.com',
+            webUrl: 'https://developers.kakao.com',
+          },
+        },
+      ],
+    });
+}
 
+
+
+    
+</script>
+</head>
+<body>
+카카오test<br><br><br>
+
+
+0f79b8aa7666f5831109a6c2e60a548f<br><br><br>
+
+
+
+<button onclick="share()">공유하기</button><br><br><br>
+
+
+
+
+    
+</body>
+</html>
