@@ -90,13 +90,14 @@ console.log(file11);
 
 const fileArray = []
 fileArray.push(file11);
+var files = document.getElementById('file').files;
 
 
 function share4(){
   var imgUrl1;
 
   Kakao.Link.uploadImage({
-    file: fileArray
+    file: files
   }).then(function(res){
     imgUrl1 = res.infos.original.url;
   });
@@ -146,7 +147,7 @@ alert(imgUrl1);
 
 0f79b8aa7666f5831109a6c2e60a548f<br><br><br>
 
-
+<input type="file" id="file">
 
 <button onclick="share()">공유하기</button><br><br><br>
 <button onclick="share2()">공유하기2</button><br><br><br>
