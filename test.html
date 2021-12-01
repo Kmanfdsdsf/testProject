@@ -9,7 +9,8 @@
 <script>
 
 function share(){
-    Kakao.init("0f79b8aa7666f5831109a6c2e60a548f");
+    // Kakao.init("0f79b8aa7666f5831109a6c2e60a548f");
+    Kakao.init("d1bb1b81fc346c69d8dba1770192b466");
     Kakao.Link.sendDefault({
       objectType: 'feed',
       content: {
@@ -29,10 +30,10 @@ function share(){
       },
       buttons: [
         {
-          title: '웹으로 보기',
+          title: '유투브 보기',
           link: {
-            mobileWebUrl: 'https://developers.kakao.com',
-            webUrl: 'https://developers.kakao.com',
+            mobileWebUrl: 'https://www.youtube.com/watch?v=muHOPqE0HO0',
+            webUrl: 'https://www.youtube.com/watch?v=muHOPqE0HO0',
           },
         },
         {
@@ -49,7 +50,7 @@ function share(){
 
 function share2(){
     
-  Kakao.init("0f79b8aa7666f5831109a6c2e60a548f");
+  Kakao.init("d1bb1b81fc346c69d8dba1770192b466");
 
   Kakao.Link.sendCustom({
       templateId:65919
@@ -58,7 +59,7 @@ function share2(){
     
 function share3(){
     
-    Kakao.init("0f79b8aa7666f5831109a6c2e60a548f");
+    Kakao.init("d1bb1b81fc346c69d8dba1770192b466");
   
     Kakao.Link.sendCustom({
         templateId:65923
@@ -154,7 +155,7 @@ alert(imgUrl1);
 
 <input type="file" id="file"><br><br><br>
 
-<button onclick="share()">공유하기</button><br><br><br>1
+<button onclick="share()">공유하기</button><br><br><br>
 <button onclick="share2()">공유하기2</button><br><br><br>
 <button onclick="share3()">공유하기3</button><br><br><br>
 <button onclick="share4()">공유하기4</button><br><br><br>
