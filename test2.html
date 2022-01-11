@@ -93,7 +93,9 @@ const dataURLtoFile = (dataurl, fileName) => {
 function share4(){
 
   Kakao.init("0f79b8aa7666f5831109a6c2e60a548f");
-  
+  // Kakao.init("d1bb1b81fc346c69d8dba1770192b466");
+
+
 var file11 = dataURLtoFile('data:image/jpeg;base64,'+bImg1,'aaa.jpg');
 console.log(file11);
 
@@ -101,6 +103,9 @@ const fileArray = []
 fileArray.push(file11);
 var files = document.getElementById('file').files;
 
+console.log('1111111111');
+console.log('1111111111');
+console.log('1111111111');
 
   var imgUrl1;
 
@@ -108,12 +113,20 @@ var files = document.getElementById('file').files;
     file: files
     //file: fileArray
   }).then(function(res){
+    
+    console.log('2222222');
+    console.log('2222222');
+    console.log('2222222');
+    console.log('2222222');
     imgUrl1 = res.infos.original.url;
+    console.log('2222222');
+    console.log('2222222');
+    console.log('2222222');
+    console.log('2222222');
   });
 
 alert(imgUrl1);
 
-    // Kakao.init("d1bb1b81fc346c69d8dba1770192b466");
     Kakao.Link.sendDefault({
       objectType: 'feed',
       content: {
@@ -152,7 +165,7 @@ alert(imgUrl1);
 </script>
 </head>
 <body>
-카카오test<br><br><br>
+카카오test22<br><br><br>
 
 
 0f79b8aa7666f5831109a6c2e60a548f<br><br><br>
