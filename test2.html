@@ -39,7 +39,6 @@ const dataURLtoFile = (dataurl, fileName) => {
 
 function share2(){
   Kakao.init("0f79b8aa7666f5831109a6c2e60a548f");
-  var imgUrl1 = '';
 
 var file11 = dataURLtoFile('data:image/jpeg;base64,'+bImg1,'aaa.jpg');
 console.log(file11);
@@ -53,6 +52,7 @@ console.log('1111111111');
 console.log('files');
 console.log(files);
 
+var imgUrl1 = '';
 
   Kakao.Link.uploadImage({
     file: files
@@ -71,13 +71,13 @@ console.log(files);
     console.log('2222222');
     console.log('2222222');
     console.log('2222222');
+    share44(imgUrl1);
   });
 
   console.log('imgUrl1');
   console.log(imgUrl1);
   alert(imgUrl1);
 
-  //share44(imgUrl1);
 }
 function share44(imgUrl1){
 
